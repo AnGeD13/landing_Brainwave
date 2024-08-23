@@ -1,0 +1,109 @@
+.price {
+    color: $dark;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    row-gap: 74px;
+    padding-top: 109px;
+    background-image: url("/assets/images/price-bg.png");
+
+    &::after {
+        content: url("/assets/images/price-wave.png");
+        position: absolute;
+        bottom: -2px;
+        height: 94px;
+    }
+
+    &__main {
+        width: 630px;
+        height: 142px;
+        text-align: center;
+
+        &__title {
+            font-family: "Gilroy-Bold";
+            @include font(48px, 58px, -1.8px);
+            margin-bottom: 22px;
+        }
+
+        &__text {
+            width: 468px;
+            opacity: 0.7;
+            font-family: "Gilroy-Regular";
+            @include font(19px, 32px, -0.2px);
+            margin-left: 81px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        column-gap: 30px;
+    }
+    // TODO добавить цвет карточкам
+
+    &__card {
+        box-sizing: border-box;
+        width: 350px;
+        height: 557px;
+        text-align: center;
+        border: 1px solid #E7E9ED;
+        border-radius: 10px;
+        padding: 26px 22px 36px 22px;
+
+        &-white {
+            background-color: white;
+        }
+    }
+
+    &__status {
+        font-family: "Gilroy-Bold";
+        @include font(13px, 15.72px, 1.63px);
+        color: #F64B4B;
+        text-transform: uppercase;
+        margin-bottom: 31px;
+    }
+
+    &__cost {
+        font-family: "Rubik-Regular";
+        @include font(17px, 29px, -0.09px);
+        margin-bottom: 14px;
+
+        &__digit {
+            font-family: "Gilroy-Bold";
+            @include font(60px, 65px, -2px);
+        }
+
+        &__val {
+            font-family: "Gilroy-Bold";
+            @include font(24px, 65px, -0.8px);
+        }
+    }
+
+    &__features {
+        margin-bottom: 6px;
+
+        &__item {
+            box-sizing: border-box;
+            width: 306px;
+            height: 73px;
+            border-top: 1px solid #E7E9ED;
+            padding: 21px 0 18px 0;
+            font-family: "Gilroy-Regular";
+            @include font(19px, 32px, -0.2px);
+        }
+    }
+
+    &-btn {
+        font-family: "Gilroy-Bold";
+        @include font(17px, 32px, -0.6px);
+    }
+}
+
+.black {
+    @include btn(219px, 59px, $dark, 7px, white);
+}
+
+.red {
+    @include btn(285px, 59px, $red, 7px, white);
+}

@@ -1,0 +1,53 @@
+.step {
+    color: $dark;
+
+    &__main {
+        width: 630px;
+        text-align: center;
+        margin: 59px 0 74px 484px;
+
+        &__title {
+            font-family: "Gilroy-Bold";
+            @include font(48px, 58px, -1.8px);
+            margin-bottom: 21px;
+        }
+
+        &__text {
+            width: 468px;
+            margin-left: 82px;
+            opacity: 0.7;
+            font-family: "Gilroy-Regular";
+            @include font(19px, 32px, -0.2px);
+        }
+    }
+
+    &__img {
+        width: 829px;
+        height: auto;
+        margin-left: 386px;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 125px;
+        justify-content: center;
+        margin-top: 43px;
+    }
+
+    &__item {
+        width: 253px;
+        text-align: center;
+
+        &__title {
+            font-family: "Gilroy-Bold";
+            @include font(21px, 32px, -0.5px);
+            margin-bottom: 14px;
+        }
+
+        &__text {
+            opacity: 0.7;
+            font-family: "Gilroy-Regular";
+            @include font(17px, 29px, -0.2px);
+        }
+    }
+}

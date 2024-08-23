@@ -1,0 +1,49 @@
+.collab {
+    display: flex;
+    color: $dark;
+
+    &__img {
+        width: 603px;
+        height: 621px;
+        padding: 77px 78px 0 181px;
+    }
+
+    &__main {
+        width: 375px;
+        height: 477px;
+        padding: 115px 363px 150px 0;
+
+        &__title {
+            font-family: "Gilroy-Bold";
+            @include font(48px, 58px, -1.8px);
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            font-family: "Gilroy-Regular";
+            @include font(19px, 32px, -0.2px);
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        &__item {
+            width: 339px;
+
+            &__title {
+                font-family: "Gilroy-Bold";
+                @include font(21px, 32px, -0.5px);
+                margin-bottom: 11px;
+            }
+
+            &__text {
+                font-family: "Gilroy-Regular";
+                @include font(17px, 29px, -0.2px);
+            }
+        }
+    }
+}

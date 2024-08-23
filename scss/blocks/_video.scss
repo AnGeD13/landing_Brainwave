@@ -1,0 +1,54 @@
+.video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 652px;
+    background: linear-gradient(0.25turn, #161C2D, #313C59);
+    margin-top: 123px;
+
+    &::after {
+        content: url("/assets/images/video-wave.png");
+        position: absolute;
+        top: 298px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        background-color: white;
+        top: 0;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 1110px;
+        height: 652px;
+        z-index: 2;
+        background-image: url("/assets/images/video-main.png");
+
+        &::before {
+            content: url("/assets/images/video-dots.png");
+            position: absolute;
+            z-index: 1;
+            bottom: -54px;
+            left: -40px;
+            
+        }
+    }
+
+    &__btn {
+        width: 242px;
+        height: 202px;
+        background: url("/assets/icons/video-btn.png") no-repeat center;
+        border: none;
+        background-size: cover;
+        margin-top: 43px;
+    }
+
+}

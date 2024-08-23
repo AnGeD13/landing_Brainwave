@@ -1,0 +1,33 @@
+@import "./reset";
+@import "./constants";
+@import "./mixin";
+
+@import "./blocks/header";
+@import "./blocks/collaborate";
+@import "./blocks/organize";
+@import "./blocks/step";
+@import "./blocks/video";
+@import "./blocks/problem";
+@import "./blocks/comments";
+@import "./blocks/price";
+@import "./blocks/footer";
+
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url("/fonts/Rubik-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Rubik-Bold";
+    src: url("/fonts/Rubik-Bold.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("/fonts/Gilroy-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("/fonts/Gilroy-Bold.woff2");
+}
